@@ -34,3 +34,22 @@ const myFunction=function(){
     console.log("hello world");
 }
 myFunction();
+
+//***********************memory allocation *****************************//
+
+// primitive datatype : Stack memory   copy of variable 
+// non primitive data : Heap memory    refrence of original value
+
+let Accountdet="gaurav@gmail.com"; // Accountdet is save on stack
+let Anotherone= Accountdet;
+Anotherone='ramesh@gmail.com'
+Accountdet='shiva@gmail.com'
+console.log(Anotherone);
+console.log(Accountdet);
+
+let object1={
+    name :'shiva'
+    
+}
+object1.name='bhola';
+console.log(object1.name);
